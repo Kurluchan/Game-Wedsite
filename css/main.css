@@ -65,7 +65,7 @@ header nav {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
 }
 
 .menu-toggle span {
@@ -464,6 +464,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
     font-size: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
+    z-index: 1;
 }
 
 .carousel-controls .carousel-btn:hover {
@@ -602,12 +603,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
     position: absolute;
 }
 
-.feedback .vector {
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
 .feedback .vector1 {
     top: 0;
     right: 0;
@@ -629,7 +624,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-    z-index: 2;
 }
 
 .feedback form .inline {
@@ -666,7 +660,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
 }
 
 .feedback form button, .portfolio-project details summary {
-    position: absolute;
     background: #DC7000;
     border-radius: 5px;
     border: 0;
@@ -674,11 +667,10 @@ header nav ul li.btn a:hover, .email .block button:hover {
     color: #fff;
     padding: 15px 35px;
     transition: all 500ms ease;
-    width: 100%;
     margin-top: 20px;
     list-style: none;
     text-align: center;
-    z-index: 2;
+    width: 100%;
 }
 
 .feedback .container button:hover {
@@ -762,6 +754,10 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .portfolio-block p {
     padding-bottom: 30px;
+}
+
+.portfolio-block img {
+    padding-top: 100px;
 }
 
 .readmore-animated {
@@ -869,6 +865,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
     border-radius: 50px;
     width: 50px;
     height: 50px;
+    z-index: 1;
 }
 
 .reviews .carousel-btn-prev {
@@ -1259,11 +1256,15 @@ footer > p {
         font-size: 50px;
     }
 
+    .hero .container {
+        position: relative;
+    }
+
     .hero-image {
         display: initial;
         position: absolute;
-        top: -200px;
-        right: -100px;
+        top: -130px;
+        right: -130px;
     }
 
     
